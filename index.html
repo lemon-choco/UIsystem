@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- jQuery 및 기타 라이브러리 로드 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    
+    <!-- CSS 파일 로드 -->
+    <link rel="stylesheet" href="./style.css"/>
+
+    <!-- 폰트 어썸 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="bg-gradient"></div>
+    <!-- 헤더 -->
+    <header>
+        <!-- 메인 페이지로 가능 링크 -->
+        <a href="index.html"> 
+        <div class="title">
+            <h2>Korea Polytechnic University <br>
+                Graduation Exhibition</h2>
+        </div>
+        </a>
+        <!-- 네비게이션 -->
+        <nav class="nav">
+            <ul class="nav-main">
+                <li><a href="profil.html"><p>학생 프로필</p></a></li>
+                <li><a href="worklist.html"><p>작품 갤러리</p></a></li>
+            </ul>
+            <ul class="nav-sub">
+                <li><a href="#"><p>전체</p></a></li>
+                <li><a href="#"><p>미디공</p></a></li>
+                <li><a href="#"><p>산디공</p></a></li>
+                <li><a href="#"><p>제품</p></a></li>
+                <li><a href="#"><p>서비스</p></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+
+    <div class="main-container" style="justify-content: space-between;">
+        
+        <div class="point-text"></div>
+
+         <a href="worklist.html" class="link-media">
+            Media <br>
+            Medi <br>
+            Med <br>
+            Me <br>
+            M
+        </a>
+
+        <a href="worklist.html" class="link-industrial">
+            Industrial <br>
+            Industria <br>
+            Industri <br>
+            Industr <br>
+            Indust <br>
+            Indus <br>
+            Indu <br>
+            Ind <br>
+            In <br>
+            I
+        </a>
+        <a href="celebrating.html" class="link-celebrating">
+            Celebrating <br>
+            Celebratin <br>
+            Celebrati <br>
+            Celebrat <br>
+            Celebra <br>
+            Celebr <br>
+            Celeb <br>
+            Cele <br>
+            Cel <br>
+            Ce <br>
+            C
+        </a>
+
+        <div class="hover-image"></div>
+        <div class="hover-text-media">
+            Design can be art.<br>
+            Design can be aesthetics.<br>
+            Design is so simple,<br>
+            that's why it's so complicated.<br>
+        </div>
+        <div class="hover-text-indust">
+            Design is not just <br>
+            what it looks like and feels like.<br>
+            Design is how it works.
+        </div>
+        <div class="hover-text-cele">
+            Where do new ideas come from?<br>
+            The answer is simple:  differences.<br>
+            Creativity comes from<br>
+            unlikely juxtapositions.
+
+        </div>
+
+
+    </div>
+
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer">
+        <div class="footer-title">
+            <p>Korea Polytechnic University <br>
+                Graduation Exhibition</p>
+        </div>
+        <div class="footer-cont">
+            <ul class="footer-link">
+                <li><a href="#"><p class="small-1">개인정보처리방침</p></a></li>
+                <li><a href="#"><p class="small-1">개인정보 목적외 이용·제공대장</p></a></li>
+                <li><a href="#"><p class="small-1">정보보호실천수칙</p></a></li>
+                <li><a href="#"><p class="small-1">정보공개</p></a></li>
+                <li><a href="#"><p class="small-1">대학정보공시</p></a></li>
+                <li><a href="#"><p class="small-1">원격지원</p></a></li>
+            </ul>
+            <p class="small-3">
+                15073 경기도 시흥시 산기대학로 237 (정왕동) 한국산업기술대학교대표전화 031-8041-1000입학안내 1588-2036 <br>
+                COPYRIGHT 2014 KOREA POLYTECHNIC UNIVERSITY. ALL RIGHTS RESERVED.webmaster@kpu.ac.kr</p>
+        </div>
+        </div>
+    </footer>
+</body>
+
+
+
+<script>
+    $(document).ready(function()
+    {
+        // link-media 를 호버했을 때
+        $('.link-media').hover(function(){
+
+            // link-media 를 호버 인
+            $('.title').css('background-color','rgba(0,0,0,0)');
+            $('.nav-main').css('background-color','rgba(0,0,0,0)');
+            $('.nav-sub').css('background-color','rgba(0,0,0,0)');
+
+            $('.link-industrial').css('opacity','0');
+            $('.link-celebrating').css('opacity','0');
+            $('.point-text').css('opacity','0');
+            $(this).addClass('hoverd');
+
+            $('.hover-text-media').css('opacity','100');
+            $('.hover-image').addClass('mediahover');
+            $('.bg-gradient').addClass('bg-yellow');
+            
+        }, function() {
+            // link-media 를 호버 아웃
+            $('.title').css('background-color','#fff');
+            $('.nav-main').css('background-color','#fff');
+            $('.nav-sub').css('background-color','#fff');
+           
+            $('.link-industrial').css('opacity','100');
+            $('.link-celebrating').css('opacity','100');
+            $('.point-text').css('opacity','100');
+            $(this).removeClass('hoverd');
+
+            $('.hover-text-media').css('opacity','0');
+            $('.hover-image').removeClass('mediahover');
+            $('.bg-gradient').removeClass('bg-yellow');
+            
+        });
+
+        // link-industrial 를 호버했을 때
+        $('.link-industrial').hover(function(){
+
+            // link-industrial 를 호버 인
+            $('.title').css('background-color','rgba(0,0,0,0)');
+            $('.nav-main').css('background-color','rgba(0,0,0,0)');
+            $('.nav-sub').css('background-color','rgba(0,0,0,0)');
+
+            $('.link-media').css('opacity','0');
+            $('.link-celebrating').css('opacity','0');
+            $('.point-text').css('opacity','0');
+            $(this).addClass('hoverd');
+
+            $('.hover-text-indust').css('opacity','100');
+            $('.hover-image').addClass('industhover');
+            $('.bg-gradient').addClass('bg-blue');
+
+        }, function() {
+            // link-industrial 를 호버 아웃
+            $('.title').css('background-color','#fff');
+            $('.nav-main').css('background-color','#fff');
+            $('.nav-sub').css('background-color','#fff');
+
+            $('.link-media').css('opacity','100');
+            $('.link-celebrating').css('opacity','100');
+            $('.point-text').css('opacity','100');
+            $(this).removeClass('hoverd');
+
+            $('.hover-text-indust').css('opacity','0');
+            $('.hover-image').removeClass('industhover');
+            $('.bg-gradient').removeClass('bg-blue');
+
+        });
+
+        // link-celebrating 를 호버했을 때
+        $('.link-celebrating').hover(function(){
+            // link-celebrating 를 호버 인
+            $('.title').css('background-color','rgba(0,0,0,0)');
+            $('.nav-main').css('background-color','rgba(0,0,0,0)');
+            $('.nav-sub').css('background-color','rgba(0,0,0,0)');
+
+            $('.link-media').css('opacity','0');
+            $('.link-industrial').css('opacity','0');
+            $('.point-text').css('opacity','0');
+            $(this).addClass('hoverd');
+
+            $('.hover-text-cele').css('opacity','100');
+            $('.hover-image').addClass('celehover');
+            $('.bg-gradient').addClass('bg-red');
+
+        }, function() {
+            // link-celebrating 를 호버 아웃
+            $('.title').css('background-color','#fff');
+            $('.nav-main').css('background-color','#fff');
+            $('.nav-sub').css('background-color','#fff');
+
+            $('.link-media').css('opacity','100');
+            $('.link-industrial').css('opacity','100');
+            $('.point-text').css('opacity','100');
+            $(this).removeClass('hoverd');
+
+            $('.hover-text-cele').css('opacity','0');
+            $('.hover-image').removeClass('celehover');
+            $('.bg-gradient').removeClass('bg-red');
+
+        });
+
+
+
+    });
+
+</script>
+
+
+
+
+
+</html>
