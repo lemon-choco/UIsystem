@@ -1,0 +1,455 @@
+
+/* 전체에 적용되는 CSS */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 변수 선언 */
+:root{
+    /* 메인 컬러 */
+    --main-color: #0216C5;
+
+    /* 오파시티 컬러 */
+    --oppacity-blue: rgba(196, 216, 246, 0.6);
+    --oppacity-yellow: rgba(255, 223, 108, 0.6);
+    --oppacity-red: rgba(255, 133, 133, 0.6);
+
+    /* 그라데이션 컬러(var이 안 먹히니 주석에 있는거 복사해서 쓰세요) */
+
+    /* 그라데이션 블루 */
+    /* linear-gradient(to top, rgba(10, 181, 255, 0.6),rgba(216, 255, 255, 0)) */
+    
+    /* 그라데이션 옐로우 */
+    /* linear-gradient(to top, rgba(255, 223, 108, 0.5),rgba(255, 255, 255, 0)); */
+    
+    /* 그라데이션 레드 */
+    /* linear-gradient(to top, rgba(250, 46, 46, 0.5),rgba(255, 255, 255, 0)) */
+    
+   
+
+    /* 그레이 컬러 */
+    --color-black: #383838;
+    --color-gray3: #222222;
+    --color-gray2: #727272 ;
+    --color-gray1: #ECECEC;
+
+}
+
+
+/* 폰트 (roboto) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@700;800&display=swap');
+
+/* body 에 적용되는 것들 */
+body{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 2100px;
+}
+
+body ul{
+  list-style: none;
+}
+
+body a{
+  text-decoration: none;
+}
+
+/* 폰트들 정의 */
+body h1{
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 10%;
+}  
+
+body h2{
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 10%;
+} 
+
+body h3{
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 10%;
+}  
+
+body h4{
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 10%;
+}  
+
+body h5{
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 10%;
+}  
+
+body p{
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 10%;
+}  
+
+body .small-1{
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 10%;
+}  
+
+body .small-2{
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 10%;
+}  
+
+body .small-3{
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 10%;
+}  
+
+body .now {
+  color: var(--main-color);
+}
+
+
+/* 백그라운드 이미지 */
+.bg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -10;
+  margin: 0 2.5%;
+  opacity: 0.25;
+  background-image: url('source/dots.png');
+  background-size: 100% auto;
+  background-repeat: repeat;
+}
+
+.bg-gradient{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -5;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  /* background: linear-gradient(to top, rgba(255, 223, 108, 0.5),rgba(255, 255, 255, 0)); */
+  /* background: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0)); */
+}
+
+.bg-gradient.bg-yellow{
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(to top, rgba(255, 223, 108, 0.5),rgba(255, 255, 255, 0));
+}
+
+.bg-gradient.bg-blue{
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(to top, rgba(10, 181, 255, 0.6),rgba(216, 255, 255, 0));
+}
+
+.bg-gradient.bg-red{
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(to top, rgba(250, 46, 46, 0.5),rgba(255, 255, 255, 0));
+}
+
+/* ===================================================== */
+
+/* 헤더 부분 */
+
+/* 타이틀 */
+.title{
+ position: relative;
+ width: 890px;
+ height: 150px;
+ min-width: 890px;
+ top: 70px;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+ color: var(--color-black);
+ background-color: #fff;
+}
+
+.title-small{
+ position: relative;
+ width: 610px;
+ height: 100px;
+ min-width: 610px;
+ top: 70px;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+ color: var(--color-black);
+ background-color: #fff;
+}
+
+.logo {
+  width: 210px;
+  height: 55px;
+  position: absolute;
+  background-image: url('source/logo.png');
+  background-size: cover;
+  margin-top: 69px;
+  margin-left: 278px;
+}
+
+/* 네비게이션 */
+.nav{
+  margin-top: 165px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.nav a{
+  color: var(--color-black);
+}
+
+.nav p{
+  font-weight: bold;
+  padding: 8px;
+}
+
+.nav p:hover{
+  color: var(--main-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-main{
+  min-width: 270px;
+  height: 72px;
+  margin-left: 18%;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.nav-sub{
+  min-width: 540px;
+  height: 72px;
+  margin-left: auto;
+  margin-right: 18%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+
+
+/* ===================================================== */
+
+   .logo {
+    width: 210px;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    background-image: url('source/logo-3.png');
+    background-size: cover;
+    margin-top: 69px;
+    margin-left: 278px;    
+  }
+  section{
+    display: flex;
+    justify-content: center;
+  }
+  header .hero{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 432px;
+    padding: 0;
+    z-index: -9;
+    opacity: 70%;
+    background-image: url('source/personal04-2.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;            
+}
+
+.banner-title{
+    position: absolute;
+    left: 0;
+    top: 148px;
+    margin-top: 35px;
+    margin-left: 278px;   
+  }
+
+.banner-sub-text{
+position: absolute;
+width: 700px;
+height: 66px;
+right: 0;
+top: 300px;
+text-align: right;
+color: var(--color-gray2)
+
+}
+  .main-container{
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin-top: 40px;
+      position: absolute;
+      top: 350px;;
+  }
+
+  .container-title {
+    text-align: center;
+    background-color: #fff;
+    width: 776px;
+    height: 208px;
+   
+}
+
+.icon-container{
+    width: 700px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    background-color: #fff;
+    
+}
+.icon{
+    width: 140px;
+    height: 100px;
+    float: left;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+}
+i{
+    font-size: 54px;
+    margin-bottom: 10px;
+}
+.question-container{
+    font-size: 20px;  
+    color: var(--color-black);
+    width: 1300px;
+    height: 1000px;
+    position: relative;
+    background-color: white;
+    padding-top: 30px;
+    margin-top: 20px;
+   }
+   .question-box{
+       width: 321px;
+       height: auto;
+   }
+   
+   .question{
+       width: auto;
+       margin-bottom: 80px; 
+       text-align: center;
+   }
+   /* 라디오버튼그룹 */
+.radio-container{
+    width: auto;
+    height: 32px;  
+    display: flex;
+    position: absolute;
+    right: 250px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+.bt-box{
+   display: flex;
+   flex-wrap: wrap;
+   
+}
+
+.radio-bt{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    border: 1px solid var(--color-gray3);
+    background-color:white ;
+  margin-left: 140px;
+}
+.feed-text-box{
+    width:725px;
+    height: 110px;
+    border: 1px solid var(--color-gray2);
+    background-color: white;
+    position: absolute;
+    right: 250px;
+}
+/* 저장버튼 */
+button{
+    border: 1px solid var(--color-gray3);
+    color: var(--color-black);
+    padding: 10px;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    width: 269px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 180px;
+}
+button:hover{
+	background: rgba(0,79,255,0.9);
+    color: white;
+	cursor: pointer;
+	border: none;
+}
+
+/* ------푸터-------- */
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    color: #fff;
+    background-color: var(--color-gray3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-title{
+    margin-right: 94px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .footer-cont{
+    color: #fff;
+  }
+
+  .footer-cont ul{
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .footer-cont li{
+    margin-right: 5px;
+  }
+
+  .footer-cont a{
+    color: #fff;
+  }

@@ -1,0 +1,603 @@
+/* 전체에 적용되는 CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'Roboto', sans-serif;
+  }
+  :root{
+   /* 그레이 컬러 */
+   --color-black: #383838;
+   --color-gray3: #222222;
+   --color-gray2: #727272 ;
+   --color-gray1: #ECECEC;
+  }
+
+  /* 폰트 (roboto) */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@700;800&display=swap');
+
+
+
+/* 백그라운드 이미지 */
+.bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    z-index: -10;
+    margin: 0 2.5%;
+    opacity: 0.25;
+    background-image: url('source/dots.png');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    height: 1700px;
+  }
+
+  /* 헤더 부분 */
+
+  header .hero{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 432px;
+      padding: 0;
+      z-index: -9;
+      opacity: 70%;
+      background-image: url('source/personal04-2.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;            
+  }
+
+  .logo {
+    width: 210px;
+    height: 55px;
+    position: absolute;
+    background-image: url('source/logo-3.png');
+    background-size: cover;
+    margin-top: 69px;
+    margin-left: 278px;    
+  }
+
+  h4{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 10%;
+    margin-left: 280px;
+    position: absolute;
+    width: 712px;
+    height: 49px;    
+    top: 184px;
+    font-family: 'Roboto', sans-serif;
+
+  } 
+
+  .details{
+    Width: 524px;
+    Height: 105px;
+    padding: 20px;
+    float: right;
+    margin-right: 280px;
+    margin-top: 159px;     
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0.0),rgba(255, 255, 255, 0));
+  }
+
+  .details small-3{
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 10%;
+    color: #fff ;
+    opacity: 0;
+    text-align: end;
+  } 
+
+
+  @media (max-width: 1000px){
+      .logo{
+          opacity: 0;         
+      }
+    }    
+
+  
+/*content-1 부분*/
+
+  .content-1{    
+    background-color: #fff;   
+    width: 930px;
+    height: 235px; 
+    
+    position: absolute;
+    top: 360px;   
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;     
+  }
+
+  .content-1 h4{
+    height: 49px;
+    line-height: 49px;
+    
+    font-size: 32px;
+    font-weight: bold;
+    color: #0216C5;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;   
+    
+    margin-top: 39px;    
+    margin-bottom: 85px;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
+  }
+
+  .content-1 p{
+    height: 32px;
+    line-height: 32px;
+    
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+  }
+
+
+  /*content-2 부분*/
+
+  .content-2{  
+       
+    background-color: #fff;   
+    width: 1318px;
+    height: 925px; 
+    
+    position: relative;
+    top: 360px;        
+    left: 0;
+    right: 0;
+    bottom: 0;  
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex; 
+    flex-direction: column;   
+  }
+
+  .content-2 h5{
+    height: 52px;
+    line-height: 52px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #383838, 100%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+    margin-top: 27px;    
+    margin-bottom: 65px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*content-2의 items 부분*/
+
+  .items{
+      
+      width: 1300px;
+      height: 849px;
+      
+      position: absolute;
+      top: 145px;
+      left: 0;
+      right: 0;
+      bottom: 0; 
+      margin-left: auto;
+      margin-right: auto;
+     
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .items .item-1{
+      
+      width: 140px;
+      Height: 184px;
+      line-height: 184px;
+      display: flex; 
+      flex-direction: column;
+  }
+
+  .items .item-1 span{
+      font-size: 36px;
+      text-align: center;      
+  }
+
+  .items .item-1 small-3{
+      font-size: 13px;
+      color: #383838, 100%;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+  }
+
+/*아이템 2 도표*/
+
+    .items .item-2{
+      
+      width: 1064px;
+      Height: 859px;
+}
+   /*그래프*/
+    .items .item-2 #graph{
+        border: solid 1px #727272;
+        width: 1064px;
+        Height: 580px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
+
+    /*그래프 안의 요소들*/
+
+    /*그래프 요소1*/
+    .item-2 #graph #graph-items1{       
+        width: 86px;
+        height: 580px;        
+        display: flex; 
+        flex-direction: column;
+    }   
+    .item-2 #graph #graph-items1 .shape{
+        width: 86px;
+        height: 17px;
+        background-color: #727272;
+        position: absolute;
+        top: 510px;       
+    }
+    #graph #graph-items1 h5{
+        font-size: 24px;
+        font-weight: 500;
+        height: 35px;
+        color: #727272;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        margin: 0;
+        margin-left: 25px;        
+        top: 530px;        
+    }
+
+    /*그래프 요소2*/
+    .item-2 #graph #graph-items2{       
+        width: 86px;
+        height: 580px;        
+        display: flex; 
+        flex-direction: column;
+    }   
+    .item-2 #graph #graph-items2 .shape{
+        width: 86px;
+        height: 76px;
+        background-color: #727272;
+        position: absolute;
+        top: 450px;       
+    }
+    #graph #graph-items2 h5{
+        font-size: 24px;
+        font-weight: 500;
+        height: 35px;
+        color: #727272;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        margin: 0;
+        margin-left: 25px;        
+        top: 530px;        
+    }
+
+    /*그래프 요소3*/
+    .item-2 #graph #graph-items3{       
+        width: 86px;
+        height: 580px;        
+        display: flex; 
+        flex-direction: column;
+    }   
+    .item-2 #graph #graph-items3 .shape{
+        width: 86px;
+        height: 233px;
+        background-color: #727272;
+        position: absolute;
+        top: 294px;       
+    }
+    #graph #graph-items3 h5{
+        font-size: 24px;
+        font-weight: 500;
+        height: 35px;
+        color: #727272;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        margin: 0;
+        margin-left: 25px;        
+        top: 530px;        
+    }
+
+    /*그래프 요소4*/
+    .item-2 #graph #graph-items4{       
+        width: 86px;
+        height: 580px;        
+        display: flex; 
+        flex-direction: column;
+    }   
+    .item-2 #graph #graph-items4 .shape{
+        width: 86px;
+        height: 307px;
+        background-color: #0045CB;
+        position: absolute;
+        top: 222px;       
+    }
+    #graph #graph-items4 h5{
+        font-size: 24px;
+        font-weight: bold;
+        height: 35px;
+        color: #727272;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        margin: 0;
+        margin-left: 25px;        
+        top: 530px;        
+    }
+
+    /*그래프 요소5*/
+    .item-2 #graph #graph-items5{       
+        width: 86px;
+        height: 580px;        
+        display: flex; 
+        flex-direction: column;
+    }   
+    .item-2 #graph #graph-items5 .shape{
+        width: 86px;
+        height: 150px;
+        background-color: #727272;
+        position: absolute;
+        top: 379px;       
+    }
+    #graph #graph-items5 h5{
+        font-size: 24px;
+        font-weight: 500;
+        height: 35px;
+        color: #727272;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        margin: 0;
+        margin-left: 25px;        
+        top: 530px;        
+    }
+
+
+    /*이모티콘*/
+    .items .item-2 #imoticon{
+        
+        width: 1064px;
+        Height: 140px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*1*/
+
+    #imoticon .frown{
+      width: 140px;
+      Height: 184px;
+      line-height: 184px;
+      display: flex; 
+      flex-direction: column;
+    }
+    #imoticon .frown span{
+        font-size: 48px;
+        
+      text-align: center; 
+    }
+    #imoticon .frown h5{
+        font-size: 24px;
+        font-weight: 500;
+        color: #727272, 100%;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /*2*/
+
+    #imoticon .meh{
+        width: 140px;
+        Height: 184px;
+        line-height: 184px;
+        display: flex; 
+        flex-direction: column;
+      }
+      #imoticon .meh span{
+          font-size: 48px;
+          
+        text-align: center; 
+      }
+      #imoticon .meh h5{
+          font-size: 24px;
+          font-weight: 500;
+          color: #727272, 100%;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+      }
+
+      /*3*/
+
+    #imoticon .smile{
+        width: 140px;
+        Height: 184px;
+        line-height: 184px;
+        display: flex; 
+        flex-direction: column;
+      }
+      #imoticon .smile span{
+          font-size: 48px;
+         
+        text-align: center; 
+      }
+      #imoticon .smile h5{
+          font-size: 24px;
+          font-weight: 500;
+          color: #727272, 100%;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+      }
+
+      /*4*/
+
+    #imoticon .smile-beam{
+        width: 140px;
+        Height: 184px;
+        line-height: 184px;
+        display: flex; 
+        flex-direction: column;
+      }
+      #imoticon .smile-beam span{
+          font-size: 48px;
+          
+        text-align: center; 
+      }
+      #imoticon .smile-beam h5{
+          font-size: 24px;
+          font-weight: 500;
+          color: #727272, 100%;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+      }
+
+      /*5*/
+
+    #imoticon .laugh-beam{
+        width: 140px;
+        Height: 184px;
+        line-height: 184px;
+        display: flex; 
+        flex-direction: column;
+      }
+      #imoticon .laugh-beam span{
+          font-size: 48px;          
+          
+        text-align: center; 
+      }
+      #imoticon .laugh-beam h5{
+          font-size: 24px;
+          font-weight: 500;
+          color: #727272, 100%;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+      }  
+
+
+/*아이템 3*/
+
+    .items .item-3{    
+      width: 140px;
+      Height: 184px;
+      line-height: 184px;
+      display: flex; 
+      flex-direction: column;
+}
+
+    .items .item-3 span{
+      font-size: 36px;
+      text-align: center;      
+}
+
+    .items .item-3 small-3{
+      font-size: 13px;
+      color: #383838, 100%;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+}
+
+
+/* 확인버튼 */
+button{
+    border: 1px solid var(--color-gray3);
+    color: var(--color-black);
+    padding: 10px;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    width: 269px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 480px;
+}
+a{
+    text-decoration: none;
+}
+button:hover{
+   background: rgba(0,79,255,0.9);
+    color: white;
+   cursor: pointer;
+   border: none;
+}
+
+
+
+ /* 푸터 */
+ .footer{
+    width: 100%;
+    position: absolute;
+    bottom: 990;
+    margin-top: 90px;
+    height: 120px;
+    color: #fff;
+    background-color: var(--color-gray3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-title{
+    margin-right: 94px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .footer-cont{
+    color: #fff;
+  }
+
+  .footer-cont ul{
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .footer-cont li{
+    margin-right: 5px;
+  }
+
+  .footer-cont a{
+    color: #fff;
+  }
+
+ 
+
+ 
